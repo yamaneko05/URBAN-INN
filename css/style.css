@@ -1,0 +1,129 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  color: #121212;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #f0f0f0;
+  padding-bottom: 1px;
+}
+
+header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+header .content {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content img {
+  width: 180px;
+}
+header .toggle_btn {
+  transform: translateY(5px);
+}
+header .toggle_btn .hamburger {
+  width: 50px;
+  height: 15px;
+  position: relative;
+  margin-bottom: 5px;
+}
+header .toggle_btn .hamburger span {
+  transition: all 0.5s 0s ease;
+  height: 3px;
+  background-color: #121212;
+  position: absolute;
+}
+header .toggle_btn .hamburger span:first-child {
+  width: 50px;
+  top: 0;
+}
+header .toggle_btn .hamburger span:last-child {
+  width: 30px;
+  bottom: 0;
+}
+header .toggle_btn p {
+  font-size: 14px;
+  font-weight: bold;
+}
+header .toggle_btn.open span {
+  width: 30px !important;
+  top: 6px !important;
+  left: 10px;
+}
+header .toggle_btn.open span:first-child {
+  transform: rotateZ(45deg);
+}
+header .toggle_btn.open span:last-child {
+  transform: rotateZ(-45deg);
+}
+header nav {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+header nav ul {
+  border-top: 1px solid #eee;
+}
+header nav li {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  text-transform: uppercase;
+}
+
+main {
+  margin-top: 70px;
+}
+
+footer {
+  border-top: 1px solid #121212;
+}
+footer .content {
+  padding: 30px 20px;
+  background-color: #f0f0f0;
+}
+footer .content p {
+  margin-bottom: 15px;
+}
+footer .content p:last-child {
+  margin-bottom: 0;
+}
+footer .content .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+footer .copyright {
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}/*# sourceMappingURL=style.css.map */
